@@ -4,7 +4,6 @@
   <title>Twitter Search</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <!-- required libraries -->
   <link rel="stylesheet" href="lib/jquery.mobile-1.2.0.min.css" />
   <script type="text/javascript" src="lib/jquery-1.8.2.min.js"></script>
   <script type="text/javascript" src="lib/jquery.mobile-1.2.0.min.js"></script>
@@ -13,21 +12,18 @@
   <script type="text/javascript" src="lib/iscroll.js"></script>
   <script type="text/javascript" src="lib/jquery.mobile.iscrollview.js"></script>
 
-  <!-- the various view models -->
   <script type="text/javascript" src="viewModel/ItemViewModel.js"></script>
   <script type="text/javascript" src="viewModel/MockListService.js"></script>
   <script type="text/javascript" src="viewModel/NoListsViewModel.js"></script>
   <script type="text/javascript" src="viewModel/ListItemsViewModel.js"></script>
   
-  <!-- the code that puts it all together -->
   <script type="text/javascript" src="app.js" ></script>
   
-  <!-- some simple styling for the twitter view -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ### A page that renders the TwitterSearchViewModel -->
+  <!-- ### A page that renders the NoListsViewModel -->
   <div data-role="page" data-theme="b"
         id="listsView">
     <div data-role="header" data-theme="b">
@@ -55,7 +51,7 @@
     </div>
   </div>
 
-  <!-- ### A page that renders the SearchResultsViewModel -->
+  <!-- ### A page that renders the ListItemsViewModel -->
   <div data-role="page" data-theme="b" id="listItemsView">
     <div data-role="header" data-theme="b">
       <a data-role="button" data-bind="click: backToListsView" data-icon="arrow-l">Back</a>
